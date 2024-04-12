@@ -1,14 +1,15 @@
 function About() {
   return (
     <>
-      <section className="bg-1white p-16">
+      <section id="about" className="bg-1white p-16">
+      <div className="container px-6 py-10 mx-auto">
         <p className="text-2red text-7xl font-semibold text-center ">About</p>
 
-        <div class="flex justify-between p-11 mr-36 ml-36">
+        <div className="flex justify-between p-11 ">
           <img
             src="src/assets/background-about.webp"
             alt=""
-            class="w-[35rem] rounded-xl border border-2red"
+            className=" object-cover w-[35rem] rounded-xl border border-2red"
           />
 
           <p className="text-center w-[600px] text-1gray">
@@ -26,16 +27,16 @@ function About() {
           </p>
         </div>
 
-        <div class="flex justify-between p-11 mx-80">
-          <p className="text-2red text-7xl font-semibold text-center ">
+        <div className="flex justify-between p-11 mx-40 ">
+          <p className="text-2red text-7xl font-semibold text-center mt-11">
             Vision
           </p>
-          <p className="text-2red text-7xl font-semibold text-center ">
+          <p className="text-2red text-7xl font-semibold text-center mt-11">
             Mission
           </p>
         </div>
-        <div class="flex justify-between p-11 mx-52">
-          <p className="text-center w-[400px] text-1gray leading-relaxed">
+        <div className="flex justify-between p-11 ">
+          <p className="text-center w-[600px] text-1gray leading-relaxed mt-11">
             At Blaqbox, our mission is to empower businesses and individuals
             through innovative technology solutions. We strive to deliver
             cutting-edge IT services that enhance efficiency, drive growth, and
@@ -44,7 +45,12 @@ function About() {
             needs.
           </p>
 
-          <p className="text-center w-[400px] text-1gray leading-relaxed">
+       
+           
+            <div className="divider lg:divider-horizontal bg-2red w-1 h-96 rounded-lg"></div>
+        
+
+          <p className="text-center w-[600px] text-1gray leading-relaxed mt-11">
             Our vision at Blaqbox is to revolutionize the IT industry by
             continually pushing boundaries and setting new standards of
             excellence. We envision a future where technology seamlessly
@@ -54,6 +60,7 @@ function About() {
             force behind transformative technological advancements that
             positively impact society.
           </p>
+        </div>
         </div>
       </section>
     </>

@@ -1,18 +1,28 @@
-import "./App.css";
-import About from "./components/About/About";
-import Hero from "./components/Hero/Hero";
-import Navigation from "./components/Navigation/Navigation";
-import Services from "./components/Services/Services";
 import 'boxicons'
+import React from 'react';
+import Navigation from "./components/Navigation/Navigation";
+import Hero from "./components/Hero/Hero";
+import Services from "./components/Services/Services";
+import About from "./components/About/About";
+import Teams from "./components/Teams/Teams";
+import Projects from './components/Projects/Projects';
+import { BrowserRouter } from 'react-router-dom';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
-    <>
-      <Navigation></Navigation>
-      <Hero></Hero>
-      <Services></Services>
-      <About></About>
-    </>
+    <BrowserRouter>
+      <>
+        <Navigation />
+        <Hero />
+        <Services />
+        <About />
+        <Teams />
+        <Projects />
+        <Contact/>
+        
+      </>
+    </BrowserRouter>
   );
 }
 

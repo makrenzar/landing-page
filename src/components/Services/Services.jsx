@@ -1,11 +1,12 @@
 function Services() {
   return (
     <>
-      <section className="bg-1white p-11">
+      <section id="services" className="bg-1white p-11">
+      <div className="container px-6 py-10 mx-auto">
         <p className="text-2red text-7xl font-semibold text-center ">
           Services
         </p>
-        <div className="grid grid-flow-cols-4  grid-cols-4 mt-11">
+        <div className="grid grid-flow-cols-4  grid-cols-4 mt-11 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
           <div className="w-80 h-60 mx-auto bg-white shadow-2xl shadow-2white  rounded-lg overflow-hidden">
             <div className="p-4 flex flex-col items-center">
               <div className="items-center">
@@ -66,6 +67,7 @@ function Services() {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </>
